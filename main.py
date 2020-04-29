@@ -1,16 +1,16 @@
 while 1 :
     
     def F_P(i, n, P):
-        return(P*(1+i)^n)
+        return(P*pow(1+i, n))
 
     def P_F(i, n , F):
-        return(F*(1+i)^(-n))
+        return(F*pow(1+i, -n))
 
     def P_A(i, n , A):
          return(A*(((pow(1+i, n))-1)/i*(pow(1+i, n))))
 
     def A_P(i, n, P):
-         return(P*(( i * (pow(1 + i, n)/pow(1 + i, n)) - 1)))
+         return(P*(( i * (pow(1 + i, n)/((pow(1 + i, n)) - 1)))))
 
     def F_A(i, n, A):
         return(A*((pow(1+i, n)-1)/i))
